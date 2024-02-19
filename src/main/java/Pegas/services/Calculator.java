@@ -1,5 +1,6 @@
 package Pegas.services;
-
+//D:\backup\4\Java_Core_Seminar1\src\main>javac -sourcepath ./java -d out java/Pegas/task1/Program.java
+//D:\backup\4\Java_Core_Seminar1\src\main>java -classpath ./out Pegas.task1.Program
 /**
  * simple util class
  * @author me
@@ -12,7 +13,7 @@ public class Calculator {
      * @return - difference
      */
 
-    public static int sub(int a, int b){return a*b;}
+    public static int sub(int a, int b){return a-b;}
 
     /**
      * summ function

@@ -11,6 +11,6 @@ public class Decorator {
      * @return string for terminal
      */
     public static String decorate(int a){
-        return String.format("Here if your: %d.", a);
+        return String.format("Here is your result: %d.", a);
     }
 }

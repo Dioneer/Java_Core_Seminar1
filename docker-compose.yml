@@ -1,0 +1,19 @@
+version: '3.4'
+
+services:
+  employees-app:
+    image: employees
+    container_name: employees.app
+    build:
+      context: .
+      dockerfile: Dockerfile-Employee
+    depends_on:
+      - employees-db
+  emplyees-db:
+    image: mysql:latest
+    container_name: employees.db
+    environment:
+      - MYSQL_ROOT_PASSWORD=123456
+      - MYSQL_DATABASE=vk2
+    ports:
+      - 3307:3307

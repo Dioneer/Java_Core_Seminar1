@@ -1,0 +1,8 @@
+#базовый образ
+FROM openjdk:latest
+#директория внутри контейнера
+WORKDIR /usr/src/app
+#копируеm исходный код внутрь контейнера
+COPY out/artifacts/Java_Core_Seminar1_jar/Java_Core_Seminar1.jar .
+#start java app
+CMD ["java", "-jar","Java_Core_Seminar1.jar"]

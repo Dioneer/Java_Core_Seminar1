@@ -1,4 +1,4 @@
-package Pegas.start;
+package Pegas;
 
 public class Main {
     public static void main(String[] args) {

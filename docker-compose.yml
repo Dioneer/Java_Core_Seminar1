@@ -9,11 +9,11 @@ services:
       dockerfile: Dockerfile-Employee
     depends_on:
       - employees-db
-  emplyees-db:
+  employees-db:
     image: mysql:latest
     container_name: employees.db
     environment:
       - MYSQL_ROOT_PASSWORD=123456
       - MYSQL_DATABASE=vk2
     ports:
-      - 3307:3307
+      - 3308:3308

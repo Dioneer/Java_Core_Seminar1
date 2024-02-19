@@ -25,6 +25,11 @@ public class Program {
         for(int i=0; i<count; i++){
             insertData(connection, Employee.create());
         }
+        Collection<Employee> employees = readData(connection);
+        for (Employee e: employees){
+            System.out.println(e);
+        }
+        connection.close();
     }
 
     private static void insertData(Connection connection, Employee employee) {
